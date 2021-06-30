@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::resource('project', \App\Http\Controllers\ProjectController::class);
+Route::resource('task', \App\Http\Controllers\TaskController::class);
