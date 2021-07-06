@@ -1,3 +1,6 @@
+@extends('layout')
+
+@section('content')
 <form action="/task" method="POST">
     @csrf
     <div>
@@ -16,3 +19,4 @@
     </div>
     <button type="submit">Save</button>
 </form>
+@endsection
