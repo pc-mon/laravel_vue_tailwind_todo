@@ -20,10 +20,6 @@ class ProjectController extends Controller
     
     public function update($id,Request $request) {
         $project = Project::find($id);
-        return [
-            $project,
-            $request->only('title')
-        ];
         $project->update($request->only('title'));
         return response('Success',201);
     }
